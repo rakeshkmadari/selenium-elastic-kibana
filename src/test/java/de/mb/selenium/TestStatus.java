@@ -1,3 +1,5 @@
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class TestStatus {
 
     @JsonProperty("testClass")
