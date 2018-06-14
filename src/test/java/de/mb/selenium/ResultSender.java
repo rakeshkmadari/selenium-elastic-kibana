@@ -1,3 +1,5 @@
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 public class ResultSender {
 
     private static final ObjectMapper OM = new ObjectMapper();
