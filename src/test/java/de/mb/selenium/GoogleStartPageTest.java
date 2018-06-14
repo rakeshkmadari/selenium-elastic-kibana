@@ -1,5 +1,6 @@
 package de.mb.selenium;
 
+import org.testng.annotations.Listeners;
 import static org.junit.Assert.assertTrue;
 
 import java.net.MalformedURLException;
