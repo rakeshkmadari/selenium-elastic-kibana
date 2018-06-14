@@ -1,3 +1,5 @@
+package de.mb.selenium;
+
 import com.mashape.unirest.http.Unirest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
