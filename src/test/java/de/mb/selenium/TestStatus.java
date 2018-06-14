@@ -1,3 +1,4 @@
+package de.mb.selenium;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class TestStatus {
