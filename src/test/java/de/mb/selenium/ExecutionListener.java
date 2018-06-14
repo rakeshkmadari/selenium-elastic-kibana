@@ -1,6 +1,7 @@
+package de.mb.selenium;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
-import org.testng.ITestResult; 
+import org.testng.ITestResult;
 
 public class ExecutionListener implements ITestListener {
 
