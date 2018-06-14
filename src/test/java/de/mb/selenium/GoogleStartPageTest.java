@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
+@Listeners(ExecutionListener.class)
 public class GoogleStartPageTest {
 
 	private WebDriver driver;
@@ -42,6 +42,29 @@ public class GoogleStartPageTest {
 		String bodyText = driver.findElement(By.tagName("body")).getText();
 		assertTrue(bodyText != null);
 	}
+@Test(description = "login")
+    public void login(){
 
+    }
+
+    @Test(description = "search for flights", dependsOnMethods = "login")
+    public void search(){
+
+    }
+
+    @Test(description = "select flight", dependsOnMethods = "search")
+    public void select(){
+
+    }
+
+    @Test(description = "book flight", dependsOnMethods = "select")
+    public void book(){
+
+    }
+
+    @Test(description = "logout", dependsOnMethods = "book")
+    public void logout(){
+
+    }
 
 }
