@@ -1,16 +1,16 @@
 package de.mb.selenium;
 
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.Test;
-import org.testng.annotations.Listeners;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.Test;
+import org.testng.annotations.Listeners;
 import static org.junit.Assert.assertTrue;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import org.junit.After;
-import org.junit.Before;
+//import org.junit.After;
+//import org.junit.Before;
 //import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
