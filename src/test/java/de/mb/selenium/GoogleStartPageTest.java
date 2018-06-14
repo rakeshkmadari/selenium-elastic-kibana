@@ -1,5 +1,8 @@
 package de.mb.selenium;
 
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.Test;
 import org.testng.annotations.Listeners;
 import static org.junit.Assert.assertTrue;
 
@@ -8,7 +11,7 @@ import java.net.URL;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
+//import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +22,7 @@ public class GoogleStartPageTest {
 
 	private WebDriver driver;
 
-	@Before
+	@BeforeSuite
 	public void setUp() throws MalformedURLException {
 		String serverUrl = System.getProperty("grid.server.url");
 		String gridServerUrl = "http://seleniumhub:4444/wd/hub";
@@ -32,7 +35,7 @@ public class GoogleStartPageTest {
 		driver.get("http://tomcat:10000");
 	}
 
-	@After
+	@AfterSuite
 	public void tearDownWebDriver() {
 		driver.quit();
 	}
