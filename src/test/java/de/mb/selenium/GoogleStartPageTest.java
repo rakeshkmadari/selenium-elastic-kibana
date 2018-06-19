@@ -5,7 +5,6 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 import org.testng.annotations.Listeners;
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.*;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -46,7 +45,7 @@ public class GoogleStartPageTest {
 	public void pageBodyIsNotNull() throws MalformedURLException {
 		String bodyText = driver.findElement(By.tagName("body")).getText();
 		assertTrue(bodyText != null);
-		Assert.assertNotEquals(,);
+	
 	}
 @Test(description = "login")
     public void login(){
