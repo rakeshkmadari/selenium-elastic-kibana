@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Listeners;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.*;
+import org.testng.Assert;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -51,7 +52,7 @@ public class GoogleStartPageTest {
 	}
 @Test(description = "login")
     public void login(){
-
+	Assert.assertTrue(false, "login failure");
     }
 
     @Test(description = "search for flights", dependsOnMethods = "login")
