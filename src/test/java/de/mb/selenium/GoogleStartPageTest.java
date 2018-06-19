@@ -5,6 +5,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 import org.testng.annotations.Listeners;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import java.net.MalformedURLException;
 import java.net.URL;
