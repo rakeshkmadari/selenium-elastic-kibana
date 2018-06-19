@@ -46,7 +46,7 @@ public class GoogleStartPageTest {
 	public void pageBodyIsNotNull() throws MalformedURLException {
 		String bodyText = driver.findElement(By.tagName("body")).getText();
 		assertTrue(bodyText != null);  
-		assertFalse(False);
+		assertFalse(bodyText == null);
 	
 	}
 @Test(description = "login")
